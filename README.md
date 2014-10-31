@@ -31,7 +31,9 @@ lights and let the traffic police to manage the situation.
 <li>oeambar</li>
 <li>oerojo</li>
 </ul>
-
+<h2>Simulation:</h2>
+For simulation purposes in .vwf, please comment the frequency
+divisor component in the top file. 
 
 
 
