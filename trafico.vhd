@@ -20,8 +20,8 @@ architecture structural of trafico is
 component controlador is
 	port(
 		manual	: in std_logic;
-		apaga		: in std_logic;
-		CLK		: in std_logic;
+		apaga	: in std_logic;
+		CLK	: in std_logic;
 		nsrojo	: out std_logic;
 		nsambar	: out std_logic;
 		nsverde	: out std_logic;
@@ -42,6 +42,6 @@ end component;
 signal clk_out : std_logic;
 begin
 u1	: divisor port map(rst,clk, clk_out);
-u2	:	controlador port map(manual,apaga,clk_out,nsrojo,nsambar,nsverde,oerojo,oeambar,oeverde);
---u2	:	controlador port map(manual,apaga,clk,nsrojo,nsambar,nsverde,oerojo,oeambar,oeverde);
+u2	: controlador port map(manual,apaga,clk_out,nsrojo,nsambar,nsverde,oerojo,oeambar,oeverde);
+--u2	: controlador port map(manual,apaga,clk,nsrojo,nsambar,nsverde,oerojo,oeambar,oeverde);
 end structural;
