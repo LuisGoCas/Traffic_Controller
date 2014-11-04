@@ -4,9 +4,8 @@ use ieee.std_logic_1164.all;
 entity trafico is
 	port(
 		rst,clk	: in std_logic;
-		--clk	: in std_logic;
 		manual	: in std_logic;
-		apaga		: in std_logic;
+		apaga	: in std_logic;
 		nsrojo	: out std_logic;
 		nsambar	: out std_logic;
 		nsverde	: out std_logic;
