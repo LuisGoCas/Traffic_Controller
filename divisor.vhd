@@ -13,7 +13,7 @@ end divisor;
 
 architecture arch of divisor is
 signal counter : integer;
-signal temp 	: std_logic;
+signal temp : std_logic;
 begin
 process(CLKin, reset,temp)
 begin
